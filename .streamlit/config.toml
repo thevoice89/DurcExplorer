@@ -1,0 +1,9 @@
+# Tema basato sulla palette di Bootstrap Italia (design-react-kit),
+# coerente con l'interfaccia usata in ANPR Explorer.
+[theme]
+base = "light"
+primaryColor = "#0052A3"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F2F7FC"
+textColor = "#1A1A1A"
+font = "sans serif"

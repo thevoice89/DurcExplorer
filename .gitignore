@@ -1,0 +1,23 @@
+# Segreti e chiavi
+.env
+keys/*.pem
+keys/*.key
+
+# Dati e output runtime
+data/input/*.csv
+!data/input/*.example.csv
+data/output/*
+data/*.db
+logs/*.log
+
+# Mantieni le cartelle vuote
+!**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/

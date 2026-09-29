@@ -1,0 +1,24 @@
+# Versioni testate su Python 3.13 (pin riproducibili).
+# --- Autenticazione PDND (JWT RS256 / Client Assertion) ---
+PyJWT==2.13.0
+cryptography==49.0.0
+
+# --- HTTP ---
+requests==2.34.2
+
+# --- Retry / backoff ---
+tenacity==9.1.4
+
+# --- Rate limiting (token bucket) ---
+# NOTA: pyrate-limiter 4.x ha API diversa dalla 3.x (vedi prompt Coder).
+pyrate-limiter==4.4.0
+
+# --- Config e modelli ---
+pydantic==2.13.4
+pydantic-settings==2.14.2
+
+# --- Persistenza coda/stato ---
+SQLAlchemy==2.0.51
+
+# --- Interfaccia web locale ---
+streamlit==1.58.0

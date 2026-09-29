@@ -1,0 +1,12 @@
+services:
+  pdnd-durc-batch:
+    build: .
+    container_name: pdnd-durc-batch
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./.env:/app/.env
+      - ./keys:/app/keys
+      - ./data:/app/data
+      - ./logs:/app/logs
