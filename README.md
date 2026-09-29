@@ -111,10 +111,17 @@ Sono già impostati sui valori di **produzione**. In **collaudo** vanno cambiati
 | Variabile | Produzione (predefinito) | Collaudo |
 |---|---|---|
 | `PDND_TOKEN_ENDPOINT` | `https://auth.interop.pagopa.it/token.oauth2` | `https://auth.uat.interop.pagopa.it/token.oauth2` |
-| `PDND_AUTH_AUDIENCE` | `https://auth.interop.pagopa.it/client-assertion` | `https://auth.uat.interop.pagopa.it/client-assertion` |
+| `PDND_AUTH_AUDIENCE` | `auth.interop.pagopa.it/client-assertion` | `auth.uat.interop.pagopa.it/client-assertion` |
 
-I valori esatti sono riportati nelle istruzioni per ottenere il voucher, nella pagina del
-client sul back-office: in caso di differenze, valgono quelli.
+Nota: l'audience della client assertion si scrive **senza** `https://`, come indicato nel
+manuale operativo PDND. In caso di differenze valgono i valori mostrati nella pagina del
+client sul back-office.
+
+> **Suggerimento:** nella pagina di ogni client il back-office ha il pulsante **«Simula
+> l'ottenimento del voucher»**. Prova l'intera catena (client assertion → voucher) senza
+> scrivere codice e porta allo strumento **«Debug client assertion»**, che restituisce un
+> esito dettagliato. È il modo più rapido per verificare `client_id`, `kid` e chiave prima
+> di avviare il programma.
 
 ---
 

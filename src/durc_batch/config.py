@@ -45,7 +45,7 @@ class Settings(BaseSettings):
 
     # --- Endpoint PDND (default = PRODUZIONE; sovrascrivere per UAT/collaudo) ---
     token_endpoint: str = "https://auth.interop.pagopa.it/token.oauth2"
-    auth_audience: str = "https://auth.interop.pagopa.it/client-assertion"
+    auth_audience: str = "auth.interop.pagopa.it/client-assertion"
 
     # --- E-service DURC (DA COMPILARE: specifici dell'e-service sul catalogo) ---
     durc_base_url: str = ""              # base URL e-service esposto sul catalogo

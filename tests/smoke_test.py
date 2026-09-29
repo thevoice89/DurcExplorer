@@ -19,7 +19,7 @@ def test_client_assertion() -> None:
     gen = ClientAssertionGenerator(
         client_id="client-123", kid="kid-abc",
         private_key_path=ROOT / "keys" / "private_key.pem",
-        audience="https://auth.interop.pagopa.it/client-assertion",
+        audience="auth.interop.pagopa.it/client-assertion",
         ttl_seconds=600,
     )
     token = gen.build("purpose-xyz")
