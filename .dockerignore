@@ -14,3 +14,4 @@ data/output/*
 data/*.db
 logs/*.log
 GUIDA.pdf
+docs/

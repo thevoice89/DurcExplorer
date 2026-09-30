@@ -9,6 +9,25 @@ una liquidazione. Invece di cercare le imprese una per una, carichi un elenco di
 fiscali o partite IVA. Il programma interroga l'e-service, scarica i documenti e tiene
 traccia dell'esito di ogni richiesta.
 
+## Anteprima
+
+L'interfaccia web locale: carichi l'elenco, avvii il controllo e segui l'esito di ogni
+pratica, con i contatori per stato e i documenti scaricabili.
+
+![Consultazione: caricamento dell'elenco, avvio del controllo ed esiti](docs/screenshots/consultazione.png)
+
+Credenziali PDND e chiave RSA si gestiscono dalla pagina **Impostazioni**, senza toccare a
+mano il file `.env`:
+
+![Impostazioni: parametri PDND e chiave privata RSA](docs/screenshots/impostazioni.png)
+
+Al primo avvio la configurazione risulta *Da completare*: il pannello **Stato configurazione**
+elenca cosa manca e il pulsante di avvio resta disattivato finché non è tutto a posto.
+
+![Primo avvio: configurazione da completare](docs/screenshots/primo-avvio.png)
+
+> Gli screenshot usano dati dimostrativi: codici fiscali, identificativi e URL sono fittizi.
+
 ## Funzionalità
 
 - **Interfaccia web locale** (Streamlit): pannello di configurazione con stato verde/rosso,
